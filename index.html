@@ -10,7 +10,7 @@
   <link rel="canonical" href="https://pri-beresheet.co.il/" />
   <meta property="og:title" content="Beresheet Fruits | Trusted Israeli Fruit Partner" />
   <meta property="og:description" content="A leading Israeli fruit company with strong global trade experience and a trusted partner for international suppliers." />
-  <meta property="og:image" content="assets/packing.jpg" />
+  <meta property="og:image" content="assets/hero-cherry.webp" />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#d50b0b" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -32,10 +32,17 @@
   </div>
 
   <header class="site-header">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <div class="logo-wrap">
-      <img src="assets/logo-beresheet.jpg" alt="Beresheet Fruits logo" class="logo" />
+      <a href="#main-content" aria-label="Go to top of page">
+        <img src="assets/logo-beresheet.webp" alt="Beresheet Fruits logo" class="logo" />
+      </a>
     </div>
-    <nav class="top-nav" aria-label="Primary navigation">
+    <nav class="top-nav" aria-label="Primary navigation" id="main-nav">
       <a href="#who-we-are">Who We Are</a>
       <a href="#what-we-do">What We Do</a>
       <a href="#why-work-with-us">Why Work With Us</a>
@@ -46,6 +53,23 @@
 
   <main id="main-content">
     <section class="hero section-hero" aria-label="Hero section">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide active">
+          <img src="assets/hero-cherry.webp" alt="Juicy cherries on the tree" />
+        </div>
+        <div class="hero-slide">
+          <img src="assets/hero-2846.webp" alt="Fruit orchard landscape" />
+        </div>
+        <div class="hero-slide">
+          <img src="assets/hero-2906.webp" alt="Harvest-ready fruit in the field" />
+        </div>
+        <div class="hero-slide">
+          <img src="assets/hero-2915.webp" alt="Sunlit fruit trees in bloom" />
+        </div>
+        <div class="hero-slide">
+          <img src="assets/hero-2845.webp" alt="Fresh fruit harvested for export" />
+        </div>
+      </div>
       <div class="hero-copy">
         <h1>Beresheet Fruits</h1>
         <p class="eyebrow">Trusted Israeli Fruit Partner for Global Suppliers</p>
@@ -114,13 +138,13 @@
         <p>Beresheet is an agricultural cooperative founded by 17 kibbutzim and moshavim in the Galilee and Golan Heights. We combine strong farming roots, advanced packing and cooling infrastructure, and deep Israeli market knowledge.</p>
       </div>
       <div class="panel-image">
-        <img src="assets/packing.jpg" alt="Fruit packing and storage facility" />
+        <img src="assets/packing.webp" alt="Fruit packing and storage facility" />
       </div>
     </section>
 
     <section class="what-we-do section-panel" id="what-we-do">
-      <div class="panel-image">
-        <img src="assets/pears.jpg" alt="Premium fruit ready for export" />
+      <div class="panel-image parallax">
+        <img src="assets/pears.webp" alt="Premium fruit ready for export" />
       </div>
       <div class="panel-text">
         <p class="eyebrow">What We Do</p>
@@ -157,7 +181,7 @@
         <p>Beresheet imports fruit from multiple countries and collaborates with leading international suppliers. Our goal is to grow strong, consistent and reliable relationships with partners focused on long-term cooperation.</p>
       </div>
       <div class="panel-image secondary-image" aria-hidden="true">
-        <img src="assets/hero-fruit.jpg" alt="Global fruit sourcing and supply" />
+        <img src="assets/hero-fruit.webp" alt="Global fruit sourcing and supply" />
       </div>
     </section>
 
@@ -173,7 +197,7 @@
 
   <footer class="site-footer">
     <div class="footer-brand">
-      <img src="assets/logo-beresheet-clean.jpg" alt="Beresheet Fruits logo" />
+      <img src="assets/logo-beresheet-clean.webp" alt="Beresheet Fruits logo" />
       <p>Modern fruit sourcing for international suppliers and import distributors.</p>
     </div>
     <div class="footer-contact">
