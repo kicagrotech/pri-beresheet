@@ -514,6 +514,59 @@ h1 {
   text-align: center;
 }
 
+.site-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-table {
+  margin: 28px auto 0;
+  max-width: 980px;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-table table {
+  width: auto;
+  border-collapse: collapse;
+  min-width: 0;
+  table-layout: auto;
+  margin: 0 auto;
+}
+
+.footer-table th,
+.footer-table td {
+  padding: 10px 20px;
+  vertical-align: top;
+  color: #f5f5f5;
+  position: relative;
+}
+
+.footer-table td + td::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.footer-table th {
+  background-color: transparent;
+  color: #f5f5f5;
+}
+
+.footer-table td p {
+  margin: 12px 0 0;
+}
+
+.footer-table td strong {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
 .footer-brand {
   display: flex;
   justify-content: center;
@@ -684,6 +737,39 @@ h1 {
 
   .hero-actions {
     flex-direction: column;
+  }
+
+  .footer-table table {
+    width: 100%;
+  }
+
+  .footer-table td {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .footer-table td + td {
+    margin-top: 28px;
+  }
+
+  .footer-table td p {
+    margin-top: 18px;
+  }
+
+  .footer-table td p strong {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .footer-table td p + p {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    padding-bottom: 16px;
+    margin-top: 18px;
+  }
+
+  .footer-table td + td::before {
+    display: none;
   }
 
   .accessibility-launch {
